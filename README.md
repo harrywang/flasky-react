@@ -13,6 +13,8 @@ $ npm init
 $ npm i webpack --save-dev
 $ npm i babel-core babel-loader babel-preset-env babel-preset-react --save-dev
 $ npm i react react-dom --save-dev
+$ npm i jquery --save-dev
+$ npm i react-bootstrap --save-dev
 ```
 
 Go back to the root of the folder (`flasky-react/`) and create Python virtual env and install flask.
@@ -25,9 +27,15 @@ $ pip3 install -r requirements.txt
 
 ## Run
 
-In one terminal, run `npm run watch`, which builds the static files
+### NOTE: you may need to clear cache in Chrome for the changes to show!!!
+
+Clear Cache: https://chrome.google.com/webstore/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn?hl=en
+
+In one terminal, go to /flasky/static/, run `npm run watch`, which builds the static files
 
 In another terminal, run Flask server: `$ python flasky/server/server.py`
+
+then go to http://127.0.0.1:5000/
 
 
 ## References
